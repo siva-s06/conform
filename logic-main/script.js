@@ -145,7 +145,8 @@ document.getElementById('download').addEventListener('click',async ()=>{
       const image = canvas.toDataURL('image/png');  // Convert canvas to image URL (PNG format)
       const link = document.createElement('a');
       link.href = image;
-      link.download = 'div-image.png';  // File name
       link.click();
+      link.download = 'div-image.png';  // File name
+     
     });
   })
