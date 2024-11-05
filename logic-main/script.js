@@ -130,23 +130,23 @@ function applyTransform() {
 // download the label
 
 // Capture the HTML element using html2canvas and send the image to remove.bg API
-// document.getElementById('download').addEventListener('click', function() {
-//   html2canvas(document.querySelector("#container")).then(canvas => {
-//       // Convert the canvas to a base64 image (without the prefix)
-//           let link = document.createElement('a');
-//           link.download = 'div-image.png';
-//           link.href = URL.createObjectURL(canvas);
-//           link.click();
-//       })
-// });
+document.getElementById('download').addEventListener('click', function() {
+  html2canvas(document.querySelector("#container")).then(canvas => {
+      // Convert the canvas to a base64 image (without the prefix)
+          let link = document.createElement('a');
+          link.download = 'div-image.png';
+          link.href = URL.createObjectURL(canvas);
+          link.click();
+      })
+});
 
-document.getElementById('download').addEventListener('click',async ()=>{
-    await html2canvas(document.getElementById("container")).then( async canvas => {
-      const image = canvas.toDataURL('image/png');  // Convert canvas to image URL (PNG format)
-      const link = document.createElement('a');
-      link.href = image;
-      link.click();
-      link.download = 'div-image.png';  // File name
+// document.getElementById('download').addEventListener('click',async ()=>{
+//     await html2canvas(document.getElementById("container")).then( async canvas => {
+//       const image = canvas.toDataURL('image/png');  // Convert canvas to image URL (PNG format)
+//       const link = document.createElement('a');
+//       link.href = image;
+//       link.click();
+//       link.download = 'div-image.png';  // File name
      
     });
   })
