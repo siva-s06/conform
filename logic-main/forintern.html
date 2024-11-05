@@ -101,20 +101,18 @@
         </div>
    </main>
         
-    <div class="input-container">
-        <input type="text" id="name" onchange="convert()" placeholder="Name" class="input-box">
-        <input type="text" id="std" onchange="convert()" placeholder="Standard" class="input-box">
-        <input type="text" id="sec" onchange="convert()" placeholder="Section" class="input-box">
-        <input type="text" id="sub" onchange="convert()" placeholder="Subject" class="input-box">
-        <input type="text" id="scl" onchange="convert()" placeholder="School" class="input-box">
-    </div>
-    <button type="submit" id="download" class="submit-button">Download Your Label</button>
+   <div>
+    <input type="text" id="std" placeholder="Standard" class="input-box">
+    <input type="text" id="sec" placeholder="Section" class="input-box">
+    <input type="text" id="sub" placeholder="Subject" class="input-box">
+    <input type="text" id="scl" placeholder="School" class="input-box">
+   </div>
+<button type="submit" id="download" class="submit-button">Download Your Label</button>
 
-    <img id="resultImage" style="display:none;" />
-     
+<img id="resultImage" style="display:none;" />
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="script.js"></script>
 
-    <script src="script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </body>
 </html>
